@@ -1,0 +1,15 @@
+1 函数参数：范围(box)、事件类型(onxxx)、默认选中的索引(selectedIndex)
+2 给事件类型和默认样式一个默认值  利用||
+3 获取到选项卡卡头(lis)与卡身(divs)
+    给卡头和卡身默认选中样式(lis[selectedIndex].className='selected'、divs[selectedIndex].className='selected')
+4 循环卡头,并给每一项绑定事件
+    1)给当前项(this)加类名，其余项(siblings)循环去类名
+    2)自定义属性或utils.index保存对应索引
+    3)循环给div对应项加类名，其余项去类名
+        i===index?utils.addClass(div[i],'selected'):utils.removeClass(div[i],'selected')
+
+
+
+
+
+

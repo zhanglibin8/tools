@@ -1,0 +1,22 @@
+1 获取元素
+2 获取数据(ajax)
+3 绑定数据(字符串拼接法)
+4 图片加载验证
+    验证->验证后记得显示(display)
+    默认第一张显示(zIndex & opacity)--->先zIndex 1[css方法]，后opacity 1[animate方法]
+5 自动轮播 (定时器)
+    1)设定时器
+    2)step记录索引 ->过界判断
+    3)执行轮播方法
+6 轮播方法
+    1)先zIndex 1，后opacity 1 (除了当前其余opacity 0[这里用css方法不用animate])
+                callback       siblings
+    2)焦点对齐(当i=step时加类名，否则去掉)
+7 banner的鼠标悬停与离开事件
+    1)设置与清除定时器 (设置定时器要有timer接收，方便下次清除)
+    2)left和right按钮的出现与否
+8 焦点点击事件(实现点击焦点切换到对应索引的图片)
+    就是step的改变过程(给step重新赋值为当前的li的索引)->自定义属性存索引  !别忘记执行轮播
+9 left与right按钮的点击切换事件
+    1)left是autoMove的反过程。  !也别忘记执行轮播
+    2)right等同于autoMove

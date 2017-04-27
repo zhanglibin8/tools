@@ -1,0 +1,10 @@
+*{ padding:0; margin:0;font-size: 12px;}
+body{ font-size:12px;font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";}
+a{ text-decoration:none; color:#000;}
+ol,ul{ list-style:none;}
+h1,h2,h3,h4,h5,h6,strong,b{ font-weight:normal; font-size:100%;}
+i,em{ font-style:normal;}
+img,input,select{ vertical-align:middle;border: none;}
+.clear:after{ display:block; clear:both; content:'';}
+.clear{ zoom:1;}
+table{ border-collapse:collapse;}

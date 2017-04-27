@@ -1,0 +1,29 @@
+1 函数参数：操作元素(ele)、目标值(target)、目标时间(duration)、动画结束后的动作(回调函数callback)
+2 给duration设置一个默认值2000
+3 把运动公式需要的值声明(time,begin,change)、公式(Linear)
+4 遍历target,循环设置begin和change
+    begin[key]=utils.css(ele,key);
+    change[key]=target[key]-begin[key]
+5 如果定时器存在，清除
+6 设置定时器
+    1)time+=10；
+    2)过界判断(time>=duration)
+        过界就要清除定时器
+        手动设置终点(utils.css(ele,target))
+        callback如果是函数，那么就执行它(利用call把其this修改为ele)
+    3)给元素设置运动终点值
+        需要遍历change，并判断是否这个属性是否有改变，)
+        如果有改变才设置(if(change[key])，那么---
+        Linear(time,begin[key],change[key],duration);
+        接收Linear返回值设置给元素(utils.css(ele,key,val))
+
+
+
+
+
+
+
+
+
+
+
